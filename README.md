@@ -1,6 +1,6 @@
 # EmailApplication
 ### Scenario: 
-I am an IT Support Administrator Specialist and am charge with creating emails account for new hires
+IT Support Administrator Specialist in charge of creating emails account for new hires
 ### The application should do the following:
 - Generate an email with the following syntax: firstname.lastname@department.company.com
 - Determine the department (sales, development, accounting), leave blank if doesn't exist
