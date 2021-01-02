@@ -37,14 +37,16 @@ public class Email {
     //System.out.println("The password is: " + this.password);
 
     //Combine information to form email address of form firstName.lastName@department.company.com
-    email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + this.department.toLowerCase() + companySuffix;
+    email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@"
+            + this.department.toLowerCase() + companySuffix;
     //System.out.println("Email address is: " + email);
   }
 
 
   //Ask for department
   private String setDepartment() {
-    System.out.print("Department Codes: \n1 for Sales\n2 for Development\n3 for Accounting\n0 for none \nEnter Department Code: \n");
+    System.out.print("Department Codes: \n1 for Sales\n2 for Development\n3 " +
+                      "for Accounting\n0 for none \nEnter Department Code: \n");
     Scanner input = new Scanner(System.in);
     int Dept = input.nextInt();
     if (Dept == 1) {
@@ -96,7 +98,8 @@ public String getNewPassword(){
     return password;
 }
 public String showInfo(){
-   return "Name: " + firstName + " " + lastName + "\n" + "Email address: " + email + "\nMail box capacity: " + mailBoxCapacity;
+   return "Name: " + firstName + " " + lastName + "\n" + "Email address: " + email
+          + "\nMail box capacity: " + mailBoxCapacity;
 }
 }
 
